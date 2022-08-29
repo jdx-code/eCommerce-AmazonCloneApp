@@ -45,30 +45,30 @@ function HomeScreen(){
     }, [])
 
     return(        
-                <div>
-                    <h1>Featured Products</h1>
-                    <div className="products">
-                        {loading ? ( 
-                            <div>Loading..</div> 
-                            ) : error ? ( 
-                            <div>{error}</div> 
-                            ) : (                               
-                            <Row>
-                                {
-                                    products.map((product)=>(
-                                        <Col sm={6} md={4} lg={3} className="mb-3">
-                                            <div>
-                                                <Product key={product._id} product={product}></Product>
-                                            </div>                        
-                                        </Col>                                    
-                                    ))
-                                }
-                            </Row>                            
-                            )
-                            
-                        }              
-                    </div>
-                </div>
+        <div>
+            <h1>Featured Products</h1>
+            <div className="products">
+                {loading ? ( 
+                    <div>Loading..</div> 
+                    ) : error ? ( 
+                    <div>{error}</div> 
+                    ) : (                               
+                    <Row>
+                        {
+                            products.map((product)=>(
+                                <Col sm={6} md={4} lg={3} className="mb-3">
+                                    <div>
+                                        <Product key={product._id} product={product}></Product>
+                                    </div>                        
+                                </Col>                                    
+                            ))
+                        }
+                    </Row>                            
+                    )
+                    
+                }              
+            </div>
+        </div>
                           
     );
 }
