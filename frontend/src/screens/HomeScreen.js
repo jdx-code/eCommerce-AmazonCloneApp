@@ -44,14 +44,17 @@ function HomeScreen(){
 
     return(
         <div>
-            <div className="row center">
+            <h1>Featured Products</h1>
+            <div className="products">
                 {loading ? ( 
                     <div>Loading..</div> 
                     ) : error ? ( 
                     <div>{error}</div> 
                     ) : (
                     products.map((product)=>(
-                        <Product key={product._id} product={product}></Product>
+                        <div>
+                            <Product key={product._id} product={product}></Product>
+                        </div>                        
                     )))  
                 }              
             </div>
