@@ -2,6 +2,8 @@ import React, { useEffect, useReducer } from "react";
 import Product from "../components/Product";
 import axios from 'axios';
 import logger from 'use-reducer-logger';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // import data from '../data';
 
 const reducer = (state, action) => {
@@ -42,23 +44,32 @@ function HomeScreen(){
         fetchData();
     }, [])
 
-    return(
-        <div>
-            <h1>Featured Products</h1>
-            <div className="products">
-                {loading ? ( 
-                    <div>Loading..</div> 
-                    ) : error ? ( 
-                    <div>{error}</div> 
-                    ) : (
-                    products.map((product)=>(
-                        <div>
-                            <Product key={product._id} product={product}></Product>
-                        </div>                        
-                    )))  
-                }              
-            </div>
-        </div>        
+    return(        
+                <div>
+                    <h1>Featured Products</h1>
+                    <div className="products">
+                        {loading ? ( 
+                            <div>Loading..</div> 
+                            ) : error ? ( 
+                            <div>{error}</div> 
+                            ) : (                               
+                            <Row>
+                                {
+                                    products.map((product)=>(
+                                        <Col sm={6} md={4} lg={3} className="mb-3">
+                                            <div>
+                                                <Product key={product._id} product={product}></Product>
+                                            </div>                        
+                                        </Col>                                    
+                                    ))
+                                }
+                            </Row>                            
+                            )
+                            
+                        }              
+                    </div>
+                </div>
+                          
     );
 }
 

@@ -15,7 +15,7 @@ function App() {
                     <Container>
                         <LinkContainer to="/">
                             <Navbar.Brand>
-                                amazona
+                                Shopping FrontEnd 
                             </Navbar.Brand>
                         </LinkContainer>                        
                     </Container>

@@ -1,40 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function Product(props){
 
     const {product} = props;
 
     return(        
-            <div key={product.slug} className="product">
+            <Card key={product.slug}>
                 <Link to={`/product/${product.slug}`}>
-                    <img                        
+                    <img className="card-img-top"                       
                         src={product.image} 
                         alt={product.name}
                     />
                 </Link>
-                <div className="product-info">
+                <Card.Body>
                     <Link to={`/product/${product.slug}`}>
-                        <p>{product.name}</p>
+                        <Card.Title>{product.name}</Card.Title>
                     </Link>
                     <Rating 
                         rating={product.rating}
                         numReviews={product.numReviews}
                     >
                     </Rating>
-                    <div>
-                        <p>
-                            <strong>
-                                ₹{product.price}
-                            </strong>                            
-                        </p>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-            </div>
-        
-        
+                    <Card.Text>
+                        <strong>
+                            ₹{product.price}
+                        </strong> 
+                    </Card.Text>
+                    <Button>
+                        Add to cart
+                    </Button>
+                </Card.Body>                
+            </Card>               
     )
 }
 
