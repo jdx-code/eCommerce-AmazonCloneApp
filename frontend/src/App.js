@@ -15,16 +15,15 @@ function App() {
                     <Container>
                         <LinkContainer to="/">
                             <Navbar.Brand>
-                                Shopping FrontEnd 
+                                ShoppinGo 
                             </Navbar.Brand>
                         </LinkContainer>                        
                     </Container>
                 </Navbar>
-            </header>
-            
+            </header>           
 
             <main>
-                <Container>
+                <Container className='mt-3'>
                     <Routes>
                         <Route path="/product/:slug" element={ <ProductScreen/> }></Route>
                         <Route path="/" element={ <HomeScreen/> }></Route>                    

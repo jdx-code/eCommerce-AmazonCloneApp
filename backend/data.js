@@ -43,7 +43,7 @@ const data = {
             image: '/images/p4.jpg',
             price: 999,
             brand: 'Turtle',
-            countInStock: 9,
+            countInStock: 0,
             rating: 4.5,
             numReviews: 8,
             description: 'great quality shirts'

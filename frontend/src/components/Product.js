@@ -9,7 +9,7 @@ function Product(props){
     const {product} = props;
 
     return(        
-            <Card key={product.slug}>
+            <Card>
                 <Link to={`/product/${product.slug}`}>
                     <img className="card-img-top"                       
                         src={product.image} 
@@ -21,7 +21,7 @@ function Product(props){
                         <Card.Title>{product.name}</Card.Title>
                     </Link>
                     <Rating 
-                        rating={product.rating}
+                        rating={product.rating} 
                         numReviews={product.numReviews}
                     >
                     </Rating>
