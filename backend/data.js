@@ -1,6 +1,7 @@
 const data = {
     products : [
         {
+            _id: '1',
             name: 'John Players Men Formal Shirt',
             slug: 'john-players-men-formal-shirt',            
             category: 'Shirts',
@@ -13,6 +14,7 @@ const data = {
             description: 'good quality shirts'
         },
         {
+            _id: '2',
             name: 'Indian Garage Co. Men Casual Shirt',
             slug:'indian-garage-co-men-casual-shirt',
             category: 'Shirts',
@@ -22,9 +24,10 @@ const data = {
             countInStock: 6,
             rating: 4.0,
             numReviews: 9,
-            description: 'great shirts'
+            description: 'cool shirts'
         },
-        {            
+        {          
+            _id: '3',  
             name: 'Peter England Men T-Shirt',
             slug:'peter-england-men-t-shirt',
             category: 'T-Shirts',
@@ -36,7 +39,8 @@ const data = {
             numReviews: 17,
             description: 'best quality T-shirts'
         },
-        {            
+        {          
+            _id: '4',  
             name: 'Turtle Formal Shirts',
             slug:'turtle-formal-shirts',
             category: 'Shirts',
@@ -48,7 +52,8 @@ const data = {
             numReviews: 8,
             description: 'great quality shirts'
         },
-        {            
+        {          
+            _id: '5',  
             name: 'Levis Jeans',
             slug:'levis-jeans',
             category: 'Jeans',
@@ -60,7 +65,8 @@ const data = {
             numReviews: 10,
             description: 'cool jeans'
         },
-        {            
+        {          
+            _id: '6',  
             name: 'Pepe Jeans',
             slug:'pepe-jeans',
             category: 'Jeans',

@@ -32,7 +32,7 @@ function HomeScreen(){
     });
 
     useEffect(()=>{
-        const fetchData = async() => {
+        const fetchData = async() => { 
 
             dispatch({type: 'FETCH_REQUEST'});
             try{
@@ -41,7 +41,6 @@ function HomeScreen(){
             } catch(err){
                 dispatch({type: 'FETCH_FAIL', payload: err.message});
             }
-
             // setProducts(result.data);
         }
         fetchData();
