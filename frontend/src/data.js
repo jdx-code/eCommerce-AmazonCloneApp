@@ -7,7 +7,7 @@ const data = {
             image: '/images/p1.jpg',
             price: 699,
             brand: 'John Players',
-            countInStock: 9,
+            countInStock: 3,
             rating: 4.5,
             numReviews: 10,
             description: 'good quality shirts'
@@ -19,7 +19,7 @@ const data = {
             image: '/images/p2.jpg',
             price: 499,
             brand: 'Indian Garage Co.',
-            countInStock: 6,
+            countInStock: 2,
             rating: 4.0,
             numReviews: 9,
             description: 'great shirts'
@@ -43,7 +43,7 @@ const data = {
             image: '/images/p4.jpg',
             price: 999,
             brand: 'Turtle',
-            countInStock: 9,
+            countInStock: 0,
             rating: 4.5,
             numReviews: 8,
             description: 'great quality shirts'
@@ -55,7 +55,7 @@ const data = {
             image: '/images/p5.jpg',
             price: 1569,
             brand: 'Levis',
-            countInStock: 12,
+            countInStock: 2,
             rating: 4.0,
             numReviews: 10,
             description: 'cool jeans'
